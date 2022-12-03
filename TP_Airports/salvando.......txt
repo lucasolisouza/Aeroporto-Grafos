@@ -1,0 +1,44 @@
+#ifndef STRUCTURE_H
+#define STRUCTURE_H
+#include <stdio.h>
+#include <string.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+    
+#define vertex int    
+#define N 23     
+typedef struct Tupla{
+    char source[8];
+    char destiny[8];
+}Tupla;
+
+typedef struct Flights{
+   Tupla par;
+   int numFlight;
+   int distance;
+   int numConnection;
+   int duration;
+}Flights;
+typedef struct Routes{
+   Tupla par;
+   int distance;
+   int qtyFlights;
+}Routes;
+typedef struct Airports{
+    char abbreviation[4];
+    char nameOfCity[100];
+}Airports;
+
+typedef struct Grafo{
+    Routes route;
+}Grafo; 
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* STRUCTURE_H */
+

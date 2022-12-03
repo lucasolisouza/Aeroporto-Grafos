@@ -1,1 +1,1 @@
-# Aeroporto-Grafos
+# Aeroporto-Grafos. Obs.: Parte do circuito Hamiltoniano não finalizada, apenas.
